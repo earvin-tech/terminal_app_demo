@@ -9,6 +9,16 @@ def add_slot(carpark):
     carpark.add_slot(parking_slot)
     print("Parking Slot Added\n")
 
+def delete_slot(carpark):
+    print("Deleting slot")
+    # take input the id of the parking slot
+    slot_id = input("Enter the id of the parking slot: ")
+    # delete the parking slot
+    if carpark.delete_slot(slot_id):
+        print("Parking slot deleted\n")
+    else:
+        print("No parking slot with that id.\n")
+
 def list_slots(carpark):
     all_slots = carpark.get_slots()
     print("\nListing slots...")

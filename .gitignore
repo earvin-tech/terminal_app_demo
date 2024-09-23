@@ -1,1 +1,6 @@
 .venv
+classes/__pycache__
+functions/__pycache__
+classes/__pycache__/carpark.cpython-310.pyc
+classes/__pycache__/parking_slot.cpython-310.pyc
+functions/__pycache__/carpark_functions.cpython-310.pyc
