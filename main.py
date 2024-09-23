@@ -1,3 +1,6 @@
+from colored import Fore, Back, Style # type: ignore
+
+print(f"{Fore.yellow}{Back.red}Welcome to Carpark Application!!!{Style.reset}\n")
 print("Welcome to the Carpark Application!!!\n")
 
 def create_menu():
