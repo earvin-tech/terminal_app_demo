@@ -1,5 +1,8 @@
 from colored import Fore, Back, Style # type: ignore
 
+from classes.carpark import Carpark # type: ignore
+from functions.carpark_functions import add_slot, list_slots
+
 print(f"{Fore.yellow}{Back.red}Welcome to Carpark Application!!!{Style.reset}\n")
 print("Welcome to the Carpark Application!!!\n")
 
@@ -17,15 +20,18 @@ def create_menu():
     return choice
 
 choice = ""
+
+carpark = Carpark("Carparker")
+
 while choice != "7":
     choice = create_menu()
 
     if choice == "1":
-        print("Add slot")
+        add_slot(carpark)
     elif choice == "2":
         print("Delete slot")
     elif choice == "3":
-        print("List slots")
+        list_slots(carpark)
     elif choice == "4":
         print("Park Car")
     elif choice == "5":
