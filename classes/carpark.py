@@ -20,3 +20,8 @@ class Carpark:
 
         self.slots = new_slots
         return is_deleted
+    
+    def find_slot(self, slot_id):
+        for slot in self.slots:
+            if slot.id == slot_id:
+                return slot
