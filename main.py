@@ -2,7 +2,7 @@ from colored import Fore, Back, Style # type: ignore
 
 from classes.carpark import Carpark # type: ignore
 from functions.carpark_functions import add_slot, list_slots, delete_slot, park_car
-from functions.file_functions import save_and_exit
+from functions.file_functions import save_and_exit, load_from_file
 
 print(f"{Fore.yellow}{Back.red}Welcome to Carpark Application!!!{Style.reset}\n")
 print("Welcome to the Carpark Application!!!\n")
@@ -23,6 +23,8 @@ def create_menu():
 choice = ""
 
 carpark = Carpark("Carparker")
+
+load_from_file(carpark)
 
 while choice != "7":
     choice = create_menu()
