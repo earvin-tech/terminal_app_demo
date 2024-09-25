@@ -1,0 +1,14 @@
+[
+    {
+        "slot_id": "PS1"
+    },
+    {
+        "slot_id": "PS2",
+        "car": {
+            "registration_number": "R1"
+        }
+    },
+    {
+        "slot_id": "PS3"
+    }
+]

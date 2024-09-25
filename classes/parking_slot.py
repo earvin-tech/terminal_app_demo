@@ -9,6 +9,12 @@ class ParkingSlot:
         else:
             self.car = car
             return True
+        
+    def get_id(self):
+        return self.id
+        
+    def get_car(self):
+        return self.car
 
     def __str__(self):
         if self.car:
